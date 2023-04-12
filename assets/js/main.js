@@ -48,3 +48,20 @@ const team = [
     image: 'barbara-ramos-graphic-designer.jpg',
   },
 ];
+
+for(let i = 0; i<team.length; i++){
+  console.log(team[i].name)
+  console.log(team[i].role)
+  console.log(team[i].image)
+}
+
+
+for(let i = 0; i<team.length; i++){
+  document.querySelector('.row').innerHTML+=`
+    <div class='col-4 text-center'>
+      <img src='./assets/img/${team[i].image}' height='400px'>
+      <h1>${team[i].name}</h1>
+      <h2>${team[i].role}</h2>
+    </div>
+  `
+}
