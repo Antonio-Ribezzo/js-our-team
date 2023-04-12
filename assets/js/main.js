@@ -57,11 +57,13 @@ for(let i = 0; i<team.length; i++){
 
 
 for(let i = 0; i<team.length; i++){
-  document.querySelector('.row').innerHTML+=`
-    <div class='col-4 text-center'>
-      <img src='./assets/img/${team[i].image}' height='400px'>
-      <h1>${team[i].name}</h1>
-      <h2>${team[i].role}</h2>
+  document.querySelector('#container-cards').innerHTML+=`
+    <div class='d-flex flex-column justify-content-center mb-4'>
+      <img src='./assets/img/${team[i].image}'>
+      <div class="bg-white text-center py-3">
+        <h2>${team[i].name}</h2>
+        <h3>${team[i].role}</h3>
+      </div>
     </div>
   `
 }

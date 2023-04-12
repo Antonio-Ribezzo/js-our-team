@@ -1,0 +1,23 @@
+*{
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    background-color: #F5F5F1;
+    padding: 2rem;
+}
+
+div.flex-column{
+    flex-basis: calc(85% / 3);
+}
+
+p,
+h1,
+h2,
+h3{
+    color: #736d67;
+}
+
+h3{
+    font-size: 1.2rem;
+}
